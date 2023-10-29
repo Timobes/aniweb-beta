@@ -274,4 +274,156 @@ body {
 }
 
 
+/* Anime */
 
+.anime {
+    background-image: url('../img/anime/death-note.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    width: auto;
+    height: 2200px;
+
+}
+
+.block-anime {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    width: 80%;
+    height: 2000px;
+
+    margin-left: 10%;
+
+    border: 1px solid #000;
+    background: rgba(47, 23, 79, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 150px; 
+
+    color: #fff;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}   
+
+.name-serial {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 100px;
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 40%;
+    height: 500px;
+
+    border-radius: 25px;
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+
+    /* border: 5px solid red; */
+
+    background: rgba(47, 23, 79, 0.70);
+}
+
+.info-line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.genres {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 50%;
+    height: 500px;
+
+    /* border: 5px solid green; */
+}
+
+.genres-line {
+    display: flex;
+    /* flex-wrap: wrap; */
+
+    border-radius: 25px ;
+
+    width: auto;
+    height: 80px;
+
+    align-items: center;
+
+    background: rgba(47, 23, 79, 0.80);
+}
+
+.line-name {
+    display: flex;
+
+    background: rgba(82, 39, 137, 0.80);
+    color: #000;
+
+    border-radius: 25px 0 0 25px;
+
+    height: 100%;
+    align-items: center;
+
+    padding: 0 5px 0 5px;
+
+    margin-right: 10px;
+}
+
+.description {
+    background: rgba(47, 23, 79, 0.50);
+
+    border-radius: 100px;
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.desc-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    color: #000;
+
+    border-radius: 100px 100px 0 0;
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: rgba(82, 39, 137, 0.50);
+}
