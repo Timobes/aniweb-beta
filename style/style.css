@@ -3,6 +3,7 @@
 
 body {
     z-index: 1;
+    background: #3B3A3A;
 }
 
 a {
@@ -14,423 +15,204 @@ a:visited {
     color: #fff;
 }
 
-/* Глав меню */
+.block-name {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    margin:  auto;
+    margin-bottom: 90px;
+    margin-top: 90px;
+
+    /* width: 530px; */
+    max-width: 530px;
+    min-width: 120px;
+
+    height: 80px;
+
+    color: #FFF;
+
+    border-radius: 25px;
+    background: rgba(103, 103, 103, 0.88);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
 
 .header {
-    display: flex;
     width: 100%;
+    background: rgba(40, 40, 40, 0.88);
 
+    padding: 20px 0 20px 0;
+
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    background-color: #411A94;
-    color: #fff;
-    padding: 10px 0 10px 0;
-    position: sticky;
-    top: 0;
-
-    z-index: 5;
 }
 
 .logo {
-    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFF;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .search {
-    border-radius: 45px;
-    background: #0C0A0A;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 440px;
-    height: 50px;
-    color: #fff;
-    text-align: left;
-    border: 1px solid #0C0A0A;
-    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 900px;
+    min-width: 160px;
 }
 
-.nickname {
+.search input {
+    width: 900px;
+    height: 60px;
+
+    background-image: url('../img/utilis/search.png');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto;
+
+    background-color: #fff;
+
+    border: 1px solid #fff;
+    border-radius: 25px;
+
     font-size: 25px;
 }
 
-.main {
-    background-image: url('../img/fon.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+.search input:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
 
-.anime-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    max-width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.news {
-    width: 40%;
-    height: auto;
+.search input::placeholder {
     font-size: 25px;
-    text-align: center;
-
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-
-
-    border-radius: 25px;
-    background: rgba(65, 26, 148, 0.88);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(65, 26, 148, 0.88);
-
-    padding: 10px 0 10px 0;
-
-    color: #fff;
 }
-
-.anime-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    border-radius: 175px 175px 25px 25px;
-
-    background-color: #572B8F;
-    width: 300px;
-    height: auto;
-
-    color: #fff;
-    text-align: center;
-
-    padding-bottom: 120px;
-    margin-bottom: 40px;
-}
-
-.anime-card > img {
-    width: 100%;
-}
-
-.anime-img {
-
-}
-
-.name {
-    font-size: 30px;
-}
-
-.series {
-    color: #FFF;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.rating {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    left: 240px;
-    border: 5px solid #2F174F;
-
-    width: 30px;
-    height: 30px;
-    border-radius: 25px;
-
-    text-align: center;
-    padding: 5px;
-}
-
-.footer {
-    display: flex;
-    width: 100%;
-    
-    justify-content: space-around;
-    align-items: center;
-    background-color: #411A94;
-    color: #fff;
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-.about > a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Регистрация */
-
-.reg {
-    display: flex;
-    flex-direction: column;
-
-    background-image: url('../img/remXram.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    width: 100%;
-    height: 100vh;
-
-    align-items: center;
-}
-
-.reg-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 60%;
-    height: 60%;
-
-    margin-top: 10%;
-    margin-bottom: 10%;
-
-    border-radius: 150px;
-    background: rgba(5, 0, 55, 0.50);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.reg-block > input {
-    border-radius: 25px;
-    background: #050037;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    color: #fff;
-
-    width: 400px;
-    height: 30px;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.reg-block > a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.reg-link {
-}
-
-/* rem */
-
-.rem {
-    width: 100%;
-    height: 100vh;
-
-    background-image: url('../img/rem.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    z-index: 2;
-    position: absolute;
-}
-
-.heart {
-    background-image: url('../img/heart.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    width: 324px;
-    height: 321px;
-
-    z-index: 3;
-    position: absolute;
-
-    top: 70%;
-    left: 41%;
-}
-
-/* Profile */
 
 .profile {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-image: url('../img/fon.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height: 100vh;
-    color: #fff;
-    text-align: center;
-    font-size: 45px;
 }
 
-.avatar-user {
-    width: 450px;
-    height: 450px;
+.burger {
+    display: flex;
 }
 
 
-.description {
 
-}
-
-.info {
-
+.main {
+    padding: 0 70px 0 70px;
 }
 
 
-/* Anime */
-
-.anime {
-    background-image: url('../img/anime/death-note.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    width: auto;
-    height: 2200px;
-
-}
-
-.block-anime {
+/* Главная */
+.new-main {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-around;
-
-    width: 80%;
-    height: 2000px;
-
-    margin-left: 10%;
-
-    border: 1px solid #000;
-    background: rgba(47, 23, 79, 0.50);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 150px; 
-
-    color: #fff;
 }
 
-.name {
-    width: 100%;
-    text-align: center;
-
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}   
-
-.name-serial {
-    width: 100%;
-    text-align: center;
-
-    margin-bottom: 100px;
-
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.info {
+.new {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-
-    width: 40%;
-    height: 500px;
-
-    border-radius: 25px;
-
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;    
-
-    /* border: 5px solid red; */
-
-    background: rgba(47, 23, 79, 0.70);
+    column-gap: 35px;
 }
 
-.info-line {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
-.genres {
+
+.anime-block {
     display: flex;
     flex-direction: column;
+    text-align: center;
 
-    justify-content: space-evenly;
+    width: clamp(5.125rem, 3.4000rem + 8.6250vw, 13.75rem);
 
+}
+
+.anime-img {
+    border-radius: 25px;
+    height: clamp(7.5rem, 4.9400rem + 12.8000vw, 20.3rem);
+}
+
+.anime-name {
+    color: #FFF9F9;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    text-wrap: wrap;
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post-block {
+    display: flex;
+    flex-direction: column;
+  
+    width: clamp(5.1rem, 1.6200rem + 17.4000vw, 22.5rem);
+    margin-bottom: 70px;
+}
+
+.post-img {
+    height: clamp(2.8rem, -0.7600rem + 17.8000vw, 20.6rem);
+}
+
+.post-name {
+    color: #FFF;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-    width: 50%;
-    height: 500px;
-
-    /* border: 5px solid green; */
 }
 
-.genres-line {
-    display: flex;
-    /* flex-wrap: wrap; */
-
-    border-radius: 25px ;
-
-    width: auto;
-    height: 80px;
-
-    align-items: center;
-
-    background: rgba(47, 23, 79, 0.80);
-}
-
-.line-name {
-    display: flex;
-
-    background: rgba(82, 39, 137, 0.80);
-    color: #000;
-
-    border-radius: 25px 0 0 25px;
-
-    height: 100%;
-    align-items: center;
-
-    padding: 0 5px 0 5px;
-
-    margin-right: 10px;
-}
-
-.description {
-    background: rgba(47, 23, 79, 0.50);
-
-    border-radius: 100px;
-
-    font-size: 22px;
+.post-desc {
+    color: #FFF;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.desc-name {
+.preview {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    height: 100px;
-    color: #000;
+.preview-block {
+    /* width: 400px; */
+    max-width: 400px;
+    min-width: 82px;
 
-    border-radius: 100px 100px 0 0;
+    margin-bottom: 70px;
+}
 
-    font-size: 64px;
+.preview-img {
+    width: 400px;
+    height: 224px;
+}
+
+.preview-name {
+    color: #FFF;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-    background: rgba(82, 39, 137, 0.50);
 }
